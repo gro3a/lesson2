@@ -7,14 +7,13 @@ list_of_scores= [
 {'school_class':'5v','scores':[5,3,4,2,1,1,1,5]} 
 ]
 for_big_sum= []
-sum1=0
+sred_po_shkole=0
 for each in list_of_scores:
-   sum = 0
-   for each2 in each['scores']:
-    sum = sum + each2
-   print('Средний балл в', each['school_class'], sum/len(each['scores']))
-   for_big_sum.append(sum/len(each['scores']))
-###   print(for_big_sum)
-for each3 in for_big_sum:
-    sum1= sum1 + each3
-print("Средний балл по школе:", sum1/len(for_big_sum))
+   summa_po_klassu= 0
+   for ocenka in each['scores']:
+    summa_po_klassu += ocenka
+    ocenka_v_klasse=int(ocenka)
+    for_big_sum.append(ocenka_v_klasse)
+   print('Средний балл в', each['school_class'], summa_po_klassu/len(each['scores']))
+sred_po_shkole=sum(for_big_sum)/len(for_big_sum)
+print('Средний балл по школе: ' , sred_po_shkole)

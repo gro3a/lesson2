@@ -2,12 +2,13 @@
 ###Если строки одинаковые, возвращает 1.
 ###Если строки разные и первая длиннее, возвращает 2.
 ###Если строки разные и вторая строка 'learn', возвращает 3.
-str1=input('Введите первую строку: ')
-str2=input('Введите вторую строку: ')
-if str1 == str2:
-    print(1)
-else:
-    if str2 == 'learn':
-        print(3)
+
+def strings (str1, str2):
+    if str1 == str2:
+        print(1)
     elif len(str1) > len(str2):
         print(2)
+    elif str2 == 'learn':
+        print(3)
+
+strings('sladjaslkfjals', 'dfd')

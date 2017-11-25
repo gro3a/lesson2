@@ -2,9 +2,10 @@
 from copy import copy
 names=["Вася", "Маша", "Петя", "Валера", "Саша", "Даша"]
 name=input('Введите имя: ')
-list_to_change=copy(names)
+
 
 def find_person (name, list_to_change):
+    list_to_change=copy(names)
     result=''
     while list_to_change:
         if list_to_change.pop() == name:

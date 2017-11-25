@@ -33,7 +33,7 @@ def name_planet(bot,update):
     elif planet == '/planet Uranus':
         result = ephem.constellation(ephem.Uranus(date))
     elif planet == '/planet Neptune':
-        result = ephem.constellation(ephem.Neptune(date))
+        result = ephem.constellation(ephem.Neptune(date))пше
     update.message.reply_text(result)
 
 def greet_user(bot, update):

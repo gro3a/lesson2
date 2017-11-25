@@ -3,6 +3,7 @@
 names=["Вася", "Маша", "Петя", "Валера", "Саша", "Даша"]
 while names:
     print(names[-1])
+    print(names)
     if names.pop() == 'Валера':
         print('Валера нашелся')
         break
